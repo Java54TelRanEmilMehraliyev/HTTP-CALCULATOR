@@ -7,7 +7,7 @@ import RequestHandler from './service/RequestHandler.mjs';
 const server = http.createServer();
 const PORT = 3500;
 
-const service = new CalculatorService(server, operations);
+new CalculatorService(server, operations);
 const view = new CalculatorView();
 const requestHandler = new RequestHandler(server, operations, view);
 
